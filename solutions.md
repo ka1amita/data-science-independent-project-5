@@ -32,3 +32,8 @@ JOIN
 on airfara.city1 = all_quarter_data.town1 and airfara.city2 = all_quarter_data.town2 and airfara.Year = all_quarter_data.rok
 group by year, quarter
 ```
+> this solution assumes the original database is well structured, e.g. there in not other value in the quarter column besides 1, 2, 3 or 4 or duplicates
+> another solution would be to
+> 1. filter the data into tables by individual quarters (city1, city2, year, quarter)
+> 2. join these to make a filter with only entries (city1, city2, year) with data from all four quarters
+> 3. apply this filter to the original table to get (year, quarter, avg(fare))

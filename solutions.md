@@ -1,8 +1,8 @@
 # data-science-independent-project-5
 
-##Additional Challenges
+## Additional Challenges
 
-###Intermediate Challenge
+### Intermediate Challenge
 
 What is the percent change 79 in average fare from 2007 to 2017 by flight? How about from 1997 to 2017?
 Hint: We can use the WITH clause to create temporary tables containing the airfares, then join them together to compare the change over time.
